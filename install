@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+ln -s my-vim-config/.vimrc .vimrc
+ln -s my-vim-config/.vim .vim
+
+echo "done!"
