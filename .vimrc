@@ -30,6 +30,7 @@ set smartcase
 
 "Show hidden files on NERDTree
 let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<CR>
 
 "Mappings for vim-rspec
 map <leader>t :call RunCurrentSpecFile()<CR>
