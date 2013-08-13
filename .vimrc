@@ -6,6 +6,7 @@ execute pathogen#infect()
 
 "Filetypes
 filetype plugin indent on
+let snippets_dir = substitute(globpath(&rtp, 'active-snippets/'), "\n", ',', 'g')
 
 "Auto refresh file buffer
 set autoread
