@@ -1,6 +1,6 @@
 # rspec
 snippet spechelper
-	require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')${1}
+	require 'spec_helper'${1}
 
 # describe
 snippet des
@@ -9,10 +9,9 @@ snippet des
 	end
 snippet desc
 	describe ${1:class} do
-		before do
-			${2}
-		end
+		subject{ described_class.new${2} }
 
+		${3}
 	end
 snippet descd
 	describe ${1:class}, "${2:description}" do
