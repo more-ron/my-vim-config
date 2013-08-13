@@ -29,6 +29,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+map <C-t> :CtrlPBufTagAll<CR>
 
 "Show hidden files on NERDTree
 let NERDTreeShowHidden=1
