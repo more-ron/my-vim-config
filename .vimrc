@@ -41,6 +41,11 @@ map <leader>l :call RunLastSpec()<CR>
 map <leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "!rspec --require emoji-rspec --format life {spec}"
 
+"Folding
+set foldmethod=syntax
+highlight Folded guibg=grey guifg=blue
+autocmd BufEnter * exe "normal zR"
+
 "Status line
 hi StatusLine cterm=NONE ctermbg=darkgreen ctermfg=black gui=bold guibg=green guifg=black
 hi StatusLineNC cterm=NONE ctermbg=black ctermfg=lightgray gui=bold guibg=black guifg=lightgray
