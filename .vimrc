@@ -1,3 +1,5 @@
+set nocompatible
+
 set shell=zsh
 
 execute pathogen#infect()
