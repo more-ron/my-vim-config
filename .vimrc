@@ -34,7 +34,8 @@ map <C-t> :CtrlPBufTagAll<CR>
 
 "Show hidden files on NERDTree
 let NERDTreeShowHidden=1
-map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
+map <C-n> :NERDTreeFind<CR>
 
 "Mappings for vim-rspec
 map <leader>t :call RunCurrentSpecFile()<CR>
