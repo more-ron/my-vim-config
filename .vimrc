@@ -37,6 +37,10 @@ let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 map <C-n> :NERDTreeFind<CR>
 
+"Invisibles
+set listchars=tab:▸\ ,eol:¬
+set list
+
 "Mappings for vim-rspec
 map <leader>t :call RunCurrentSpecFile()<CR>
 map <leader>s :call RunNearestSpec()<CR>
