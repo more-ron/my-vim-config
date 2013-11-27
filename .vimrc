@@ -59,7 +59,7 @@ hi StatusLineNC cterm=NONE ctermbg=black ctermfg=lightgray gui=bold guibg=black 
 set showcmd
 
 "Find what?
-command! -nargs=1 Find Ack <args> **/*.?(css|erb|feature|haml|htm|html|js|json|markdown|md|prawn|rabl|rake|rb|rxls|vim|yml)
+command! -nargs=1 Find Ack <args> **/*.(css|erb|feature|haml|htm|html|js|json|markdown|md|prawn|rabl|rake|rb|rxls|vim|yml)
 map <leader>f :exec "Find ".input("Find what? ")<cr>
 
 "Give me a break
